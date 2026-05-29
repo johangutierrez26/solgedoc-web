@@ -1,0 +1,13 @@
+solgedoc-web/
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── main.js
+└── img/
+    ├── slide1.jpg
+    ├── slide2.jpg
+    ├── slide3.jpg
+    ├── slide4.png
+    ├── slide5.jpg
+    └── slide6.jpg
