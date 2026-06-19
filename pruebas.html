@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SOLGEDOC S.A.S – Soluciones integrales en gestión documental para entidades públicas y privadas en Colombia. Organización, digitalización, custodia y transformación digital de archivos.">
+  <title>SOLGEDOC S.A.S – Gestión Documental en Colombia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- WHATSAPP FLOTANTE -->
+<a href="https://wa.me/573023077686?text=Hola,%20deseo%20información%20sobre%20los%20servicios%20de%20SOLGEDOC"
+   class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">💬</a>
+
+<!-- ══════════════════ NAVBAR ══════════════════ -->
+<nav id="navbar">
+  <a href="#inicio" class="nav-logo">
+    <div>
+      <span class="logo-text-nav">SOLGE<span>DOC</span></span>
+      <span class="logo-sas">S.A.S</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#mision">Nosotros</a></li>
+    <li><a href="#proceso">Proceso</a></li>
+    <li><a href="#sectores">Sectores</a></li>
+    <li><a href="#contacto" class="nav-cta">Cotizar ahora</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<section class="hero" id="inicio">
+  <div class="hero-bg-circle c1"></div>
+  <div class="hero-bg-circle c2"></div>
+  <div class="hero-grid">
+    <div class="hero-content">
+      <div class="hero-badge"><div class="dot"></div>Gestión Documental Integral</div>
+      <h1>Tu información,<br><span>organizada, segura</span><br>y siempre disponible</h1>
+      <p>Organizamos, protegemos y digitalizamos el acervo documental de tu empresa o entidad con soluciones a la medida, cumpliendo la normativa archivística colombiana vigente.</p>
+      <div class="hero-buttons">
+        <a href="#contacto" class="btn-primary">Solicitar diagnóstico gratuito</a>
+        <a href="#servicios" class="btn-secondary">Explorar servicios</a>
+      </div>
+      <div class="hero-stats-row">
+        <div class="hero-stat"><strong>+500</strong><span>Contratos</span></div>
+        <div class="hero-divider"></div>
+        <div class="hero-stat"><strong>100%</strong><span>Normativo AGN</span></div>
+        <div class="hero-divider"></div>
+        <div class="hero-stat"><strong>+5k</strong><span>Metros lineales</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-mini-cards">
+        <div class="mini-card"><span class="mini-icon">📋</span><h4>Organización</h4><p>TRD y fondos acumulados bajo norma AGN</p></div>
+        <div class="mini-card"><span class="mini-icon">🔒</span><h4>Custodia</h4><p>Almacenamiento seguro con trazabilidad</p></div>
+        <div class="mini-card"><span class="mini-icon">🖥️</span><h4>Digitalización</h4><p>OCR, indexación y calidad garantizada</p></div>
+        <div class="mini-card"><span class="mini-icon">☁️</span><h4>SGDEA</h4><p>Gestión electrónica en la nube</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ CARRUSEL ══════════════════ -->
+<!--
+  CÓMO CAMBIAR LAS IMÁGENES DEL CARRUSEL:
+  1. Reemplaza los archivos en la carpeta /img/ con las nuevas imágenes
+  2. Actualiza el atributo src de cada <img> si cambia el nombre del archivo
+  3. Actualiza el texto de <h3> y <p> dentro de .carousel-caption si deseas
+  4. Haz git add, git commit, git push y firebase deploy
+-->
+<div class="carousel-section" id="galeria">
+  <div class="carousel-header">
+    <span class="section-label">Nuestro trabajo</span>
+    <h2 class="section-title" style="color:#fff;">Soluciones que <span>transforman</span> organizaciones</h2>
+  </div>
+  <div class="carousel-wrapper">
+    <div class="carousel-track-outer">
+      <div class="carousel-track" id="carouselTrack">
+
+        <div class="carousel-slide">
+          <img src="img/slide1.jpg" alt="Barranquilla – sede principal de SOLGEDOC" loading="lazy">
+          <div class="carousel-caption">
+            <h3>Presencia en el Caribe colombiano</h3>
+            <p>Operamos desde Barranquilla con proyección nacional en entidades públicas y privadas.</p>
+          </div>
+        </div>
+
+        <div class="carousel-slide">
+          <img src="img/slide2.jpg" alt="Instalaciones de custodia de archivos físicos" loading="lazy">
+          <div class="carousel-caption">
+            <h3>Custodia y administración documental</h3>
+            <p>Instalaciones especializadas para el almacenamiento seguro y controlado de acervos.</p>
+          </div>
+        </div>
+
+        <div class="carousel-slide">
+          <img src="img/slide3.jpg" alt="Digitalización y gestión electrónica de documentos" loading="lazy">
+          <div class="carousel-caption">
+            <h3>Digitalización y gestión electrónica</h3>
+            <p>Transformamos documentos físicos en activos digitales con indexación avanzada y valor legal.</p>
+          </div>
+        </div>
+
+        <div class="carousel-slide">
+          <img src="img/slide4.png" alt="Capacitación en gestión documental" loading="lazy">
+          <div class="carousel-caption">
+            <h3>Capacitación y transferencia de conocimiento</h3>
+            <p>Formamos equipos institucionales en normatividad archivística y herramientas digitales.</p>
+          </div>
+        </div>
+
+        <div class="carousel-slide">
+          <img src="img/slide5.jpg" alt="Infraestructura tecnológica y seguridad" loading="lazy">
+          <div class="carousel-caption">
+            <h3>Infraestructura tecnológica y seguridad</h3>
+            <p>Redes, videovigilancia, control de acceso y soporte técnico para entornos corporativos.</p>
+          </div>
+        </div>
+
+        <div class="carousel-slide">
+          <img src="img/slide6.jpg" alt="Indicadores y tableros de gestión documental" loading="lazy">
+          <div class="carousel-caption">
+            <h3>Indicadores y toma de decisiones</h3>
+            <p>Tableros de gestión con métricas clave para el seguimiento y control institucional.</p>
+          </div>
+        </div>
+
+      </div><!-- /carousel-track -->
+    </div><!-- /carousel-track-outer -->
+
+    <button class="carousel-btn prev" onclick="moveCarousel(-1)" aria-label="Anterior">&#8592;</button>
+    <button class="carousel-btn next" onclick="moveCarousel(1)"  aria-label="Siguiente">&#8594;</button>
+    <div class="carousel-dots" id="carouselDots"></div>
+  </div>
+</div>
+
+<!-- ══════════════════ SERVICIOS ══════════════════ -->
+<section id="servicios" class="sec-light">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="section-header center reveal">
+      <span class="section-label">Nuestros Servicios</span>
+      <h2 class="section-title">Soluciones integrales para <span>cada etapa</span> documental</h2>
+      <p class="section-subtitle">Desde la organización física hasta la transformación digital completa de tu acervo documental.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card reveal">
+        <div class="service-icon ic-teal">📁</div>
+        <h3>Organización técnica de archivos</h3>
+        <p>Clasificamos, ordenamos y estructuramos archivos físicos y digitales conforme a la normativa, garantizando control, acceso y conservación eficiente.</p>
+        <a href="#contacto" class="service-link">Cotizar</a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon ic-green">📊</div>
+        <h3>Instrumentos Archivísticos</h3>
+        <p>Diseñamos e implementamos TRD, TVD, PGD y PINAR conforme a los acuerdos del Archivo General de la Nación.</p>
+        <a href="#contacto" class="service-link">Cotizar</a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon ic-blue">🖥️</div>
+        <h3>Digitalización de Documentos</h3>
+        <p>Captura, indexación y validación con OCR inteligente, tecnología de alta resolución y aseguramiento de calidad en cada imagen procesada.</p>
+        <a href="#contacto" class="service-link">Cotizar</a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon ic-teal">🛡️</div>
+        <h3>Custodia Documental</h3>
+        <p>Almacenamiento, control y administración segura de archivos con trazabilidad total y acceso oportuno a la información.</p>
+        <a href="#contacto" class="service-link">Cotizar</a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon ic-navy">🔄</div>
+        <h3>Transformación Digital</h3>
+        <p>Administración de plataformas SGDEA (Orfeo, DocuWare, Dozzier), automatización de flujos de trabajo, ciberseguridad y gestión de bases de datos.</p>
+        <a href="#contacto" class="service-link">Cotizar</a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon ic-green">👨‍🎓</div>
+        <h3>Capacitación y Formación</h3>
+        <p>Programas especializados en gestión documental, normatividad archivística y herramientas digitales, adaptados a cada institución.</p>
+        <a href="#contacto" class="service-link">Cotizar</a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon ic-teal">☁️</div>
+        <h3>Sistemas de Conservación</h3>
+        <p>Estrategias y controles para la preservación de documentos físicos y electrónicos a largo plazo, asegurando integridad y disponibilidad.</p>
+        <a href="#contacto" class="service-link">Cotizar</a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon ic-blue">🛟</div>
+        <h3>Infraestructura y Seguridad</h3>
+        <p>Videovigilancia, redes, control de acceso, infraestructura eléctrica y soporte técnico especializado para entornos corporativos.</p>
+        <a href="#contacto" class="service-link">Cotizar</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ MISIÓN & VISIÓN ══════════════════ -->
+<section id="mision" class="sec-dark">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="section-header center reveal">
+      <span class="section-label">Quiénes somos</span>
+      <h2 class="section-title">Nuestra <span>razón de ser</span> y hacia dónde vamos</h2>
+    </div>
+    <div class="mv-grid reveal">
+      <div class="mv-card mission">
+        <div class="mv-label">
+          <div class="mv-icon">🎯</div>
+          <div class="mv-label-text"><small>Lo que hacemos</small>Misión</div>
+        </div>
+        <p>Brindar soluciones integrales en gestión documental a entidades públicas y privadas, mediante la organización, conservación, digitalización y administración eficiente de su información, contribuyendo al cumplimiento normativo, la reducción de riesgos y la mejora continua de sus procesos.</p>
+      </div>
+      <div class="mv-card vision">
+        <div class="mv-label">
+          <div class="mv-icon">🚀</div>
+          <div class="mv-label-text"><small>A dónde vamos</small>Visión</div>
+        </div>
+        <p>Para 2030, ser la empresa líder en gestión documental del Caribe colombiano, reconocida por la calidad de sus soluciones, la innovación tecnológica y la confianza que generamos en cada organización que acompañamos.</p>
+      </div>
+    </div>
+    <div class="mv-values reveal">
+      <h3>Nuestros valores</h3>
+      <div class="values-row">
+        <div class="value-item"><span class="v-icon">🤝</span><span>Confianza</span></div>
+        <div class="value-item"><span class="v-icon">⚖️</span><span>Integridad</span></div>
+        <div class="value-item"><span class="v-icon">🏆</span><span>Calidad</span></div>
+        <div class="value-item"><span class="v-icon">💡</span><span>Innovación</span></div>
+        <div class="value-item"><span class="v-icon">📜</span><span>Cumplimiento</span></div>
+        <div class="value-item"><span class="v-icon">❤️</span><span>Compromiso</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ POR QUÉ ELEGIRNOS ══════════════════ -->
+<section id="nosotros" class="sec-light">
+  <div class="nosotros-grid">
+    <div class="reveal">
+      <span class="section-label">¿Por qué SOLGEDOC?</span>
+      <h2 class="section-title">Expertos que <span>protegen</span> tu patrimonio documental</h2>
+      <p style="color:var(--text-light);line-height:1.82;font-size:0.93rem;margin-bottom:0.5rem;">Acompañamos organizaciones en Colombia garantizando que su información esté organizada, protegida y disponible cuando más la necesitan.</p>
+      <ul class="why-list">
+        <li class="why-item">
+          <div class="why-check">✓</div>
+          <div><h4>Cumplimiento normativo garantizado</h4><p>Procesos ajustados a la Ley 594/2000, Decreto 1080/2015 y acuerdos del AGN.</p></div>
+        </li>
+        <li class="why-item">
+          <div class="why-check">✓</div>
+          <div><h4>Equipo certificado en archivística</h4><p>Profesionales con formación y experiencia en gestión de información pública y privada.</p></div>
+        </li>
+        <li class="why-item">
+          <div class="why-check">✓</div>
+          <div><h4>Diagnóstico inicial gratuito</h4><p>Visitamos tu organización, evaluamos el archivo y proponemos la mejor solución.</p></div>
+        </li>
+        <li class="why-item">
+          <div class="why-check">✓</div>
+          <div><h4>Soluciones completamente a la medida</h4><p>Planes personalizados según volumen, tipo de documentos y urgencia de cada cliente.</p></div>
+        </li>
+      </ul>
+    </div>
+    <div class="nosotros-visual reveal">
+      <div class="stat-card featured">
+        <strong>+5.000</strong>
+        <span>Metros lineales organizados</span>
+        <p>en entidades del sector público y privado a nivel nacional</p>
+      </div>
+      <div class="stat-card"><strong>98%</strong><span>Satisfacción</span><p>clientes que renuevan contrato</p></div>
+      <div class="stat-card"><strong>72h</strong><span>Respuesta</span><p>tiempo máx. de cotización</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ PROCESO ══════════════════ -->
+<section id="proceso" class="sec-mid">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="section-header center reveal">
+      <span class="section-label">Cómo trabajamos</span>
+      <h2 class="section-title">Un proceso <span>claro y eficiente</span></h2>
+      <p class="section-subtitle">Metodología probada que garantiza resultados medibles y cumplimiento normativo en cada proyecto.</p>
+    </div>
+    <div class="process-steps reveal">
+      <div class="step"><div class="step-num">1</div><h3>Diagnóstico</h3><p>Evaluamos el estado actual del acervo documental.</p></div>
+      <div class="step"><div class="step-num">2</div><h3>Propuesta</h3><p>Plan personalizado con cronograma y costos detallados.</p></div>
+      <div class="step"><div class="step-num">3</div><h3>Ejecución</h3><p>Implementamos con personal experto y supervisión permanente.</p></div>
+      <div class="step"><div class="step-num">4</div><h3>Entrega</h3><p>Informes completos, inventarios y capacitación al equipo.</p></div>
+      <div class="step"><div class="step-num">5</div><h3>Soporte</h3><p>Acompañamiento continuo para garantizar sostenibilidad.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ SECTORES ══════════════════ -->
+<section id="sectores" class="sec-dark">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="section-header center reveal">
+      <span class="section-label">Industrias</span>
+      <h2 class="section-title">Servimos a <span>todos los sectores</span></h2>
+      <p class="section-subtitle">Experiencia transversal que nos permite adaptarnos a los requerimientos de cada industria.</p>
+    </div>
+    <div class="sectors-grid reveal">
+      <div class="sector-item"><span class="sector-emoji">🏛️</span><span>Entidades Públicas</span></div>
+      <div class="sector-item"><span class="sector-emoji">🏦</span><span>Banca & Finanzas</span></div>
+      <div class="sector-item"><span class="sector-emoji">🏥</span><span>Salud</span></div>
+      <div class="sector-item"><span class="sector-emoji">🎓</span><span>Educación</span></div>
+      <div class="sector-item"><span class="sector-emoji">⚖️</span><span>Sector Jurídico</span></div>
+      <div class="sector-item"><span class="sector-emoji">🏭</span><span>Manufactura</span></div>
+      <div class="sector-item"><span class="sector-emoji">🏗️</span><span>Construcción</span></div>
+      <div class="sector-item"><span class="sector-emoji">📡</span><span>Telecomunicaciones</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ CONTACTO ══════════════════ -->
+<section id="contacto" class="sec-mid">
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <span class="section-label">Contáctenos</span>
+      <h2 class="section-title">Hablemos de tu<br>proyecto documental</h2>
+      <p>Solicita un diagnóstico gratuito y sin compromiso. Te contactamos en menos de 24 horas.</p>
+      <div class="contact-item">
+        <div class="contact-item-icon">📍</div>
+        <div><h4>Ubicación</h4><p>Barranquilla, Atlántico — Colombia</p></div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon">📞</div>
+        <div><h4>Teléfono / WhatsApp</h4><p>+57 302 307 7686</p></div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon">✉️</div>
+        <div><h4>Correo electrónico</h4><p>solgedoc@gmail.com</p></div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon">🕐</div>
+        <div><h4>Horario de atención</h4><p>Lunes a Viernes: 8:00 am – 6:00 pm</p></div>
+      </div>
+    </div>
+
+    <div class="contact-form reveal">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+        </div>
+        <div class="form-group">
+          <label for="empresa">Empresa / Entidad</label>
+          <input type="text" id="empresa" name="empresa" placeholder="Nombre de la organización">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="correo@empresa.com" required>
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="servicio">Servicio de interés</label>
+        <select id="servicio" name="servicio">
+          <option value="">Selecciona un servicio...</option>
+          <option>Organización & Clasificación Documental</option>
+          <option>Custodia & Almacenamiento</option>
+          <option>Digitalización de Documentos</option>
+          <option>SGDEA – Gestión Electrónica</option>
+          <option>Instrumentos Archivísticos (TRD / TVD / PGD)</option>
+          <option>Transformación Digital</option>
+          <option>Capacitación y Formación</option>
+          <option>Infraestructura y Seguridad</option>
+          <option>Diagnóstico Integral (gratuito)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Cuéntanos sobre tu proyecto</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Describe el estado actual de tus documentos y lo que necesitas..."></textarea>
+      </div>
+      <button class="btn-form" onclick="handleSubmit()">Enviar solicitud — Diagnóstico gratuito</button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo-text">SOLGE<span>DOC</span></div>
+      <p class="footer-tagline">Soluciones en Gestión Documental</p>
+      <p class="footer-desc">Empresa especializada en archivística con presencia nacional, acompañando entidades públicas y privadas en la transformación de su gestión documental bajo la normativa colombiana vigente.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Servicios</h4>
+      <ul>
+        <li><a href="#servicios">Organización Documental</a></li>
+        <li><a href="#servicios">Custodia de Archivos</a></li>
+        <li><a href="#servicios">Digitalización</a></li>
+        <li><a href="#servicios">SGDEA</a></li>
+        <li><a href="#servicios">Instrumentos Archivísticos</a></li>
+        <li><a href="#servicios">Transformación Digital</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="#mision">Misión & Visión</a></li>
+        <li><a href="#nosotros">Por qué elegirnos</a></li>
+        <li><a href="#proceso">Cómo trabajamos</a></li>
+        <li><a href="#sectores">Sectores</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Respaldo normativo</h4>
+      <div class="footer-certif">
+        <div class="certif-badge"><span class="cert-ico">📜</span><div><strong>Ley 594 de 2000</strong>Ley General de Archivos</div></div>
+        <div class="certif-badge"><span class="cert-ico">📋</span><div><strong>Decreto 1080/2015</strong>Reglamento único sector cultura</div></div>
+        <div class="certif-badge"><span class="cert-ico">🏛️</span><div><strong>Acuerdos AGN</strong>Archivo General de la Nación</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 SOLGEDOC S.A.S — Barranquilla, Colombia</p>
+    <div class="social-links">
+      <a href="#" class="social-link" title="Facebook">f</a>
+      <a href="#" class="social-link" title="Instagram">ig</a>
+      <a href="#" class="social-link" title="LinkedIn">in</a>
+      <a href="#" class="social-link" title="WhatsApp">wa</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
