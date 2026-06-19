@@ -222,7 +222,8 @@ footer { background:#040e30; border-top:1px solid rgba(255,255,255,0.05); paddin
 .footer-col ul li a { color:rgba(255,255,255,0.45); text-decoration:none; font-size:0.83rem; transition:color 0.2s; }
 .footer-col ul li a:hover { color:var(--teal); }
 .footer-certif { display:flex; flex-direction:column; gap:0.65rem; }
-.certif-badge { display:flex; align-items:center; gap:10px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); border-radius:10px; padding:9px 13px; }
+.certif-badge { display:flex; align-items:center; gap:10px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); border-radius:10px; padding:9px 13px; text-decoration:none; cursor:pointer; transition:border-color 0.2s,background 0.2s,transform 0.2s; }
+.certif-badge:hover { border-color:rgba(0,180,200,0.4); background:rgba(0,180,200,0.06); transform:translateX(3px); }
 .certif-badge .cert-ico { font-size:1.15rem; }
 .certif-badge div { font-size:0.76rem; color:rgba(255,255,255,0.48); line-height:1.4; }
 .certif-badge strong { display:block; color:rgba(255,255,255,0.75); font-size:0.79rem; }
