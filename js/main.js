@@ -89,11 +89,54 @@ function toggleMenu() {
   }
 }
 
-/* ── FORM SUBMIT (placeholder — EmailJS se integra aquí después) ── */
-function handleSubmit() {
-  const btn = document.querySelector('.btn-form');
-  if (!btn) return;
-  btn.textContent = '✅ ¡Solicitud enviada! Te contactamos pronto';
-  btn.style.background = 'linear-gradient(135deg, #1d7a2e, #0d5c1e)';
-  btn.disabled = true;
+/* ── FORM SUBMIT — envío real vía FormSubmit a solgedoc@gmail.com ── */
+const FORM_ENDPOINT = 'https://formsubmit.co/ajax/solgedoc@gmail.com';
+const contactForm   = document.getElementById('contactForm');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const btn          = contactForm.querySelector('.btn-form');
+    const originalText  = btn.textContent;
+    const originalBg     = btn.style.background;
+
+    // honeypot anti-spam: si el campo oculto viene lleno, es un bot — no enviar
+    const honey = contactForm.querySelector('input[name="_honey"]');
+    if (honey && honey.value) return;
+
+    btn.disabled = true;
+    btn.textContent = 'Enviando...';
+
+    try {
+      const formData = new FormData(contactForm);
+      const response = await fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: formData
+      });
+
+      if (response.ok) {
+        btn.textContent = '✅ ¡Solicitud enviada! Te contactamos pronto';
+        btn.style.background = 'linear-gradient(135deg, #1d7a2e, #0d5c1e)';
+        contactForm.reset();
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.style.background = originalBg;
+          btn.disabled = false;
+        }, 5000);
+      } else {
+        throw new Error('Respuesta no OK del servidor');
+      }
+    } catch (err) {
+      btn.textContent = '⚠️ No se pudo enviar — intenta de nuevo';
+      btn.style.background = 'linear-gradient(135deg, #b02a2a, #7a1c1c)';
+      btn.disabled = false;
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.style.background = originalBg;
+      }, 4000);
+      console.error('Error al enviar formulario:', err);
+    }
+  });
 }

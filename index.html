@@ -369,7 +369,13 @@
       </div>
     </div>
 
-    <div class="contact-form reveal">
+    <form class="contact-form reveal" id="contactForm">
+      <!-- Configuración FormSubmit: envía a solgedoc@gmail.com -->
+      <input type="hidden" name="_subject" value="Nueva solicitud desde la web — SOLGEDOC">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
       <div class="form-row">
         <div class="form-group">
           <label for="nombre">Nombre</label>
@@ -409,8 +415,8 @@
         <label for="mensaje">Cuéntanos sobre tu proyecto</label>
         <textarea id="mensaje" name="mensaje" placeholder="Describe el estado actual de tus documentos y lo que necesitas..."></textarea>
       </div>
-      <button class="btn-form" onclick="handleSubmit()">Enviar solicitud — Diagnóstico gratuito</button>
-    </div>
+      <button type="submit" class="btn-form">Enviar solicitud — Diagnóstico gratuito</button>
+    </form>
   </div>
 </section>
 
