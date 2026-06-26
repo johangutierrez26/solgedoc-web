@@ -229,9 +229,12 @@ footer { background:#040e30; border-top:1px solid rgba(255,255,255,0.05); paddin
 .certif-badge strong { display:block; color:rgba(255,255,255,0.75); font-size:0.79rem; }
 .footer-bottom { border-top:1px solid rgba(255,255,255,0.05); padding-top:1.5rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; max-width:1200px; margin:0 auto; }
 .footer-bottom p { font-size:0.78rem; color:rgba(255,255,255,0.28); }
-.social-links { display:flex; gap:0.7rem; }
-.social-link { width:34px; height:34px; border-radius:50%; border:1px solid rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.42); text-decoration:none; font-size:0.82rem; font-weight:600; transition:border-color 0.2s,color 0.2s; }
-.social-link:hover { border-color:var(--teal); color:var(--teal); }
+.social-links { display:flex; gap:0.7rem; align-items:center; }
+.social-link { width:36px; height:36px; border-radius:50%; border:1px solid rgba(255,255,255,0.15); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.55); text-decoration:none; transition:border-color 0.2s,color 0.2s,background 0.2s,transform 0.2s; }
+.social-link:hover { border-color:var(--teal); color:var(--teal); background:rgba(0,180,200,0.08); transform:translateY(-2px); }
+.social-link--pending { opacity:0.45; cursor:default; }
+.social-link--pending:hover { border-color:rgba(255,255,255,0.15); color:rgba(255,255,255,0.55); background:transparent; transform:none; }
+.social-link svg { width:15px; height:15px; }
 
 /* REVEAL */
 .reveal { opacity:0; transform:translateY(28px); transition:opacity 0.7s ease,transform 0.7s ease; }
